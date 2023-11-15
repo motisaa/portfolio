@@ -1,6 +1,6 @@
 # Motahare Saidi
 
-## Web Application Development Enthusiast
+## Web Application Developer
 
 Hello! I'm Motahare, a dedicated and motivated student in the field of Web
 Application Development. I have a passion for technology and a constant eagerness
