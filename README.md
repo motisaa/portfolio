@@ -31,7 +31,7 @@ of web development.
 
 ### Contact
 
-- 📧 Email: <motisa**@gmail.com>
+- 📧 Email: <motisd8@gmail.com>
 - 🔗 LinkedIn: [My profile on LinkedIn](https://www.linkedin.com/in/motahare-saidi/)
 
 Feel free to reach out, and let's connect! I am always open to new opportunities
