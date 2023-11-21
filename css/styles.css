@@ -1,5 +1,9 @@
+html {
+       max-width: 600px;
+       margin: 0 auto;
+}
 h1{
-text-align: center;
+    text-align: center;
 }
 .imgvirtualpet{
     width: 60%;
