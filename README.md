@@ -27,7 +27,7 @@ of web development.
 ### Education
 
 - Higher degree in Web Application Development in **IES Juan de Garay**
-- BA in Public Relations at **Allameh Tabatabai University, Iran**
+- BA in Public Relations at [**Allameh Tabataba'i University, Iran**](https://atu.ac.ir/en/page/1389/about-atu)
 
 ### Contact
 
