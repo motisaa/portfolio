@@ -1,12 +1,12 @@
-html, body {
+html{
        max-width: 600px;
-       text-align: center;
+       margin: auto;
 }
 h1{
-    text-align: center;
+      text-align: center;
 }
-.imgvirtualpet{
-    width: 60%;
+    .imgvirtualpet{
+      width: 60%;
 }
 
 
