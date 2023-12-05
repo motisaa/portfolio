@@ -1,6 +1,7 @@
 html{
-       max-width: 600px;   
+       max-width: 75ch;   
        margin: auto;
+       font-size: 30px;
 }
 
 
