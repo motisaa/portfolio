@@ -103,10 +103,26 @@ html {
        font-size: 20px;
        background-color: #aed7ed;
        font-family: 'Roboto', sans-serif;
+       /*Codigo del profe DM */
+       --header-height: 2rem;
+       /* We need some extra room for what comes next to the header: */
+       --header-height-extra: calc(var(--header-height) + 1.5rem);
+       /* Ensure padding when scrolling: */
+       scroll-padding-top: var(--header-height-extra);
 }
 
 h1 {
        font-family: 'Protest Riot', serif;
+}
+
+header {
+       position: sticky;
+       width: 100%;
+       top:0;
+       /*Codigo del profe DM */
+       overflow: auto;
+       height: var(--header-height);
+       padding: 0.5rem;
 }
 
 nav ul {
@@ -115,18 +131,54 @@ nav ul {
        margin: 0;
        display: flex;
        justify-content: start;
+       padding-left: 1.5em;
+       padding-top: 0.5em;
        gap: 2em;
 
 }
 
 nav {
-       position: sticky;
+       background-color: #e5c1cd;
+       height: em;
        width: 100%;
-       top: 0;
-       background-color: #cdc6e7;
-       height: 2em;
 }
 
 nav li {
        display: inline-block;
+}
+
+.imgvirtualpet{
+ max-width: 80%;
+}
+
+.Skills ul{
+   display: flex; 
+   align-items: center;
+   justify-content:space-between;
+   gap: 10px;
+   flex-flow: wrap;
+
+}
+.Skills li{
+display: inline-block;
+border: 2px solid #e5c1cd;
+background-color: #f3dbcf;
+flex: auto;
+}
+
+.grid{
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       grid-template-areas: "one two";
+}
+.edu{
+       grid-area: one;
+}
+.lang{
+       grid-area: two;
+}
+.edu li, .lang li, .con li{
+       display: block;
+       line-height: 2em;
+
 }

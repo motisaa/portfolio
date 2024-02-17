@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Motahare Saidi">
-    <meta name="description" 
-    content="Explore the portfolio of Motahare Saidi, a passionate web developer
+    <meta name="description" content="Explore the portfolio of Motahare Saidi, a passionate web developer
      skilled in Java, PHP, HTML, CSS, JavaScript, and more. Discover projects, 
      education, and contact information.">
     <title>Motahare Saidi Portfolio</title>
@@ -15,43 +14,34 @@
 </head>
 
 <body>
-    
+
     <header>
         <nav>
-         <ul>
-             <li><a href="#aboutMe">About me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact me</a></li>  
-        </ul>
-       </nav>
-       <h1>Hey I'm Moti!</h1>
-    </header>
-    
-   <main>
-    <section id="aboutMe">
-        
-        <p>
-            a second-year web development student with a passion for crafting 
-            digital experiences. My journey in web development has equipped me 
-            with a strong foundation in front-end and back-end development.
-            Beyond technical skills, I am a proactive learner. 
-            As a collaborative team player, I am excited about the opportunity 
-            to contribute my skills to innovative web development projects. 
-        </p>
-    </section>
-  </main>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out to me using the following contact information:</p>
             <ul>
-                <li>Email: motisd8@gmail.com</li>
-                <li><a href="https://www.linkedin.com/in/motahare-saidi/">My linkedIn Profile</a></li>
-                <li><a href="https://github.com/motisaa">My GitHub Profile</a></li>
+                <li><a href="#aboutMe">About me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact me</a></li>
             </ul>
-        </section>
+        </nav>
 
-    <section id="skills">
+    </header>
+
+    <main>
+        <section id="aboutMe">
+            <h1>Hey I'm Moti!</h1>
+            <p>
+                a second-year web development student with a passion for crafting
+                digital experiences. My journey in web development has equipped me
+                with a strong foundation in front-end and back-end development.
+                Beyond technical skills, I am a proactive learner.
+                As a collaborative team player, I am excited about the opportunity
+                to contribute my skills to innovative web development projects.
+            </p>
+        </section>
+    </main>
+
+    <section id="skills" class="Skills">
         <h2>Skills</h2>
         <ul>
             <li>Java</li>
@@ -67,53 +57,61 @@
         </ul>
     </section>
 
-     <section id="projects">
-         <h2>Projects</h2>
-     <ol>
-       <li>
-        <h3>Virtual Pet</h3>
-        <figure>
-            <img class="imgvirtualpet" src="images/virtualpet.jpg" 
-            alt="Virtual Pet Java Desktop Application">
-            <figcaption>
-                <a href="https://github.com/motisaa/VirtualPet_FinalJavaProject" 
-                title="project java">This Project On GitHub</a>
-                <p>A desktop application I developed as my final project 
-                for the Java module. The objective is to create a virtual pet 
-                that must be cared for and kept alive by two players.</p>
-            </figcaption>
-        </figure>
-      </li>
+    <div class="grid">
+        <section id="education" class="edu">
+            <h2>Education</h2>
+            <ul>
+                <li>Higher Degree in Web Application Development at
+                    <a href="https://portal.edu.gva.es/iesjuandegaray">
+                        <strong>IES Juan de Garay, Spain</strong>
+                    </a>
+                </li>
+                <li>BA in Public Relations at
+                    <a href="https://atu.ac.ir/en">
+                        <strong>Allameh Tabataba'i University, Iran</strong>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section id="language" class="lang">
+            <h2>Languages</h2>
+            <ul>
+                <li>Spanish (B2 certificated)</li>
+                <li>English (Upper-intermediate)</li>
+                <li>Persian (Native)</li>
+            </ul>
+        </section>
+    </div>
+ 
+    <section id="projects">
+        <h2>Projects</h2>
+        <ol>
+            <li>
+                <h3>Virtual Pet</h3>
+                <picture>
+                    <img class="imgvirtualpet" src="images/virtualpet.jpg" alt="Virtual Pet Java Desktop Application">
+                    <figcaption>
+                        <a href="https://github.com/motisaa/VirtualPet_FinalJavaProject" title="project java">This
+                            Project On GitHub</a>
+                        <p>A desktop application I developed as my final project
+                            for the Java module. The objective is to create a virtual pet
+                            that must be cared for and kept alive by two players.</p>
+                    </figcaption>
+                </picture>
+            </li>
 
-    <li>
-        <h3>Final DAW project</h3>
-        <p>In progress...</p>
-     </li>
-    </ol>
-
+            <li>
+                <h3>Final DAW project</h3>
+                <p>In progress...</p>
+            </li>
+        </ol>
     </section>
-    
-      <section id="education">
-        <h2>Education</h2>
+    <section id="contact" class="con">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me using the following contact information:</p>
         <ul>
-             <li>Higher Degree in Web Application Development at 
-                <a href= "https://portal.edu.gva.es/iesjuandegaray">
-                 <strong>IES Juan de Garay, Spain</strong>
-                </a>
-             </li>
-             <li>BA in Public Relations at 
-                <a href= "https://atu.ac.ir/en">
-                 <strong>Allameh Tabataba'i University, Iran</strong>
-                </a>
-             </li>
-        </ul>
-    </section>
-    <section id="language">
-        <h2>Languages</h2>
-        <ul>
-             <li>Spanish (B2 certificated)</li>
-             <li>English (Upper-intermediate)</li>
-             <li>Persian (Native)</li>
+            <li><img src="images/icons8-linkedin.svg" alt="linkedIn icon"><a href="https://www.linkedin.com/in/motahare-saidi/">My linkedIn Profile</a></li>
+            <li><img src="images/icons8-github.svg" alt="linkedIn icon"><a href="https://github.com/motisaa">My GitHub Profile</a></li>
         </ul>
     </section>
     <footer>
