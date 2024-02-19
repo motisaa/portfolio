@@ -111,7 +111,7 @@ html {
        scroll-padding-top: var(--header-height-extra);
 }
 
-h1 {
+ strong , em, h2 {
        font-family: 'Protest Riot', serif;
 }
 
