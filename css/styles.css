@@ -231,9 +231,12 @@ li > .button {
 .dark-theme .Skills ul li,
 .dark-theme .card,
 .dark-theme .desc,
-.dark-theme .title  {
-    color: #ffffff; /* White text color */
-    background-color:#4e5150; /* Dark gray background */
+.dark-theme .title {
+    color: #ffffff; 
+    background-color:#4e5150; 
+}
+.dark-theme .action{
+    background-color:#313f3f; 
 }
 .dark-theme a:visited{
       color: #e5c1cd;
