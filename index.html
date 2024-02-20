@@ -8,6 +8,7 @@
     <meta name="description" content="Explore the portfolio of Motahare Saidi, a passionate web developer
      skilled in Java, PHP, HTML, CSS, JavaScript, and more. Discover projects, 
      education, and contact information.">
+     <meta name="color-scheme" content="dark light">
     <title>Motahare Saidi Portfolio</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -22,6 +23,9 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact me</a></li>
+                <li> <button><img src="images/dark-theme-svgrepo-com.svg"
+                    width="30px" class="btn-toggle"
+                    ></button></li>
             </ul>
         </nav>
 
@@ -40,7 +44,7 @@
 
     <section id="skills" class="Skills">
         <h2>Skills</h2>
-        <ul>
+        <ul class="light-theme">
             <li>Java</li>
             <li>PHP</li>
             <li>HTML</li>
@@ -114,6 +118,32 @@
     <footer>
         <p>® Created by Moti</p>
     </footer>
+    <script>
+        // código de css tricks
+    document.addEventListener("DOMContentLoaded", function() {
+    const btn = document.querySelector(".btn-toggle");
+    const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+    const currentTheme = localStorage.getItem("theme");
+    if (currentTheme == "dark") {
+        document.body.classList.toggle("dark-theme");
+    } else if (currentTheme == "light") {
+        document.body.classList.toggle("light-theme");
+    }
+
+    btn.addEventListener("click", function () {
+        if (prefersDarkScheme.matches) {
+            document.body.classList.toggle("light-theme");
+            var theme = document.body.classList.contains("light-theme") ? "light" : "dark";
+        } else {
+            document.body.classList.toggle("dark-theme");
+            var theme = document.body.classList.contains("dark-theme") ? "dark" : "light";
+        }
+        localStorage.setItem("theme", theme);
+    });
+});
+
+    </script>
 </body>
 
 </html>

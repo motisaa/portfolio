@@ -96,21 +96,58 @@
        src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TzBic6CsQ.woff2) format('woff2');
        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
+body{
+       margin-top: 0;
+       background-color: var(--bg-color);
+       color: var(--text-color);
+}
+      
+html {
+       box-sizing: border-box;
+     }
+     *,
+     *::before,
+     *::after {
+       box-sizing: inherit;
+     }
+     
+     body {
+       --text-color: #222;
+       --bkg-color: #aed7ed;
+     }
+     body.dark-theme {
+       --text-color: #eee;
+       --bkg-color: #222;
+     }
+      
+       @media (prefers-color-scheme: dark) {
+              /* defaults to dark theme */
+              body {
+                --text-color: #eee;
+                --bkg-color: #222;
+              }
+              body.light-theme {
+                --text-color: #222;
+                --bkg-color: #aed7ed; /* Background color */;
+                   }
+            }
 html {
        max-width: 75ch;
        margin: auto;
        font-size: 20px;
-       background-color: #aed7ed;
        font-family: 'Roboto', sans-serif;
        /*Codigo del profe DM */
-       --header-height: 2rem;
+       --header-height: 3rem;
        /* We need some extra room for what comes next to the header: */
        --header-height-extra: calc(var(--header-height) + 1.5rem);
        /* Ensure padding when scrolling: */
        scroll-padding-top: var(--header-height-extra);
 }
 
+body{
+       background: var(--bkg-color);
+       color: var(--text-color);
+}
  strong , em, h2 {
        font-family: 'Protest Riot', serif;
 }
@@ -123,6 +160,7 @@ header {
        overflow: auto;
        height: var(--header-height);
        padding: 0.5rem;
+       box-sizing: content-box;
 }
 
 nav ul {
