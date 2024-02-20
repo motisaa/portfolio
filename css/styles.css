@@ -228,7 +228,10 @@ li > .button {
 
      /* Dark mode styles */
 .dark-theme nav,
-.dark-theme .Skills ul li {
+.dark-theme .Skills ul li,
+.dark-theme .card,
+.dark-theme .desc,
+.dark-theme .title  {
     color: #ffffff; /* White text color */
     background-color:#4e5150; /* Dark gray background */
 }
