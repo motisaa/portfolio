@@ -187,23 +187,23 @@ nav li {
 
 
 .Skills ul{
-   display: flex; 
-   align-items: center;
-   justify-content:space-between;
-   gap: 10px;
-   flex-flow: wrap;
+       display: flex; 
+       align-items: center;
+       justify-content:space-between;
+       gap: 10px;
+       flex-flow: wrap;
 
 }
 .Skills li{
-display: inline-block;
-border: 2px solid #e5c1cd;
-background-color: #f3dbcf;
-flex: auto;
+       display: inline-block;
+       border: 2px solid #e5c1cd;
+       background-color: #f3dbcf;
+       flex: auto;
 }
 
 .grid{
        display: grid;
-       grid-template-columns: repeat(2, 1fr);
+       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
        grid-template-areas: "one two";
 }
 .edu{
@@ -212,12 +212,14 @@ flex: auto;
 .lang{
        grid-area: two;
 }
-.edu li, .lang li, .con li{
+.edu li, .lang li{
        display: block;
        line-height: 2em;
 
 }
-
+.con li{
+       display: inline-block;
+}
 li > .button {
        background-color: #dce4e122;
        border: none;
@@ -247,7 +249,7 @@ li > .button {
 
 .cards {
        display: grid;
-       grid-template-columns: repeat(2, 1fr);
+       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
        gap: 40px;
      }
 /* source: https://uiverse.io/Yaya12085/little-puma-29 */
@@ -310,5 +312,11 @@ li > .button {
      
      .action:hover span {
        transform: translateX(4px);
+     }
+
+     .darkicon{
+       float: right;
+       padding-top: 0.5rem;
+       padding-right: 1.5rem;
      }
      
