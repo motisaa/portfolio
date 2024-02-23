@@ -350,7 +350,7 @@ footer {
        padding-right: 1.5rem;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
        nav a {
               float: none;
               display: block;
@@ -360,6 +360,16 @@ footer {
               font-size: 3vw;
               margin-top: 0;
        }
+
+       nav a:link, a:visited{
+              color: #000000;
+       }
+
+       .dark-theme nav a:link, 
+       .dark-theme nav a:visited{
+              color: #eee;
+       }
+
 
        header {
               background-color: #e5c1cd;
