@@ -156,7 +156,7 @@ html {
 header {
        position: sticky;
        top: 0;
-       background-color: #e5c1cd;
+       background-color: #EAD2DF;
        /*Codigo del profe DM */
        height: var(--header-height);
        padding: 0.5rem;
@@ -183,7 +183,7 @@ nav ul {
 }
 
 nav {
-       background-color: #e5c1cd;
+       background-color: #EAD2DF;
        height: 3.5rem;
        top: 0;
        width: 100%;
@@ -203,7 +203,7 @@ nav li {
 
 }
 footer {
-       background-color: #e5c1cd;
+       background-color: #EAD2DF;
        color: #000000;
        height: var(--header-height);
        padding: 0.5rem;
@@ -260,7 +260,7 @@ footer {
 }
 
 .dark-theme .action {
-       background-color: #313f3f;
+       background-color: gray;
 }
 
 .dark-theme a:visited {
@@ -268,7 +268,7 @@ footer {
 }
 
 .dark-theme a:link {
-       color: #b97c7c;
+       color: #e5c1cd;
 }
 
 .cards {
