@@ -363,10 +363,15 @@ li>.button {
 
        header {
               background-color: #e5c1cd;
+              font-size: 3vw;
               padding: 0; 
+              font-size: 3vw;
        }
-     
 
+       svg{
+              width: 2rem;
+              
+       }
        header-right {
               float: none;
        }
