@@ -211,6 +211,14 @@ nav li {
        flex-flow: wrap;
 
 }
+footer {
+       background-color: #e5c1cd;
+       color: #000000;
+       height: var(--header-height);
+       padding: 0.5rem;
+       margin:0;
+       box-sizing: content-box;
+}
 
 .Skills li {
        display: inline-block;
@@ -256,6 +264,7 @@ li>.button {
 /* Dark mode styles */
 .dark-theme nav,
 .dark-theme header,
+.dark-theme footer,
 .dark-theme .Skills ul li,
 .dark-theme .card,
 .dark-theme .desc,
@@ -363,6 +372,7 @@ li>.button {
 
        header {
               background-color: #e5c1cd;
+              position: sticky;
               font-size: 3vw;
               padding: 0; 
               font-size: 3vw;
@@ -376,36 +386,61 @@ li>.button {
               float: none;
        }
 
-       /* I had  to repeat it  dark mode rules on mobile query */
+       /* I had to repeat dark toggle rules*/
+       
        body {
-              --text-color: #222;
-              --bkg-color: #aed7ed;
-       }
-
-       body.dark-theme {
+              /* defaults to dark theme */
               --text-color: #eee;
               --bkg-color: #222;
-       }
+          }
+  
+          body.light-theme {
+              --text-color: #222;
+              --bkg-color: #aed7ed;
+          }
+  
+          body {
+              background: var(--bkg-color);
+              color: var(--text-color);
+          }
+          @media (prefers-color-scheme: dark) {
 
-       .dark-theme nav,
-       .dark-theme header,
-       .dark-theme .Skills ul li,
-       .dark-theme .card,
-       .dark-theme .desc,
-       .dark-theme .title {
+              /* defaults to dark theme */
+              body {
+                     --text-color: #eee;
+                     --bkg-color: #222;
+              }
+       
+              body.light-theme {
+                     --text-color: #222;
+                     --bkg-color: #aed7ed;
+                     /* Background color */
+                     ;
+              }
+       }
+          .dark-theme nav,
+          .dark-theme header,
+          .dark-theme footer,
+          .dark-theme .Skills ul li,
+          .dark-theme .card,
+          .dark-theme .desc,
+          .dark-theme .title {
               color: #ffffff;
               background-color: #4e5150;
-       }
-
-       .dark-theme .action {
+          }
+  
+          .dark-theme .action {
               background-color: #313f3f;
-       }
-
-       .dark-theme a:visited {
+          }
+  
+          .dark-theme a:visited {
               color: #e5c1cd;
-       }
-
-       .dark-theme a:link {
+          }
+  
+          .dark-theme a:link {
               color: #de9898;
-       }
+          }
+      }
+      
 }
+  
