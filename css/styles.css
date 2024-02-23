@@ -156,11 +156,13 @@ html {
 header {
        position: sticky;
        top: 0;
-       background-color: #EAD2DF;
+       background-color: #edcbde;
        /*Codigo del profe DM */
        height: var(--header-height);
        padding: 0.5rem;
        box-sizing: content-box;
+       border-radius: 0.3rem;
+       
 }
 
 nav a{
@@ -183,7 +185,7 @@ nav ul {
 }
 
 nav {
-       background-color: #EAD2DF;
+       background-color: #edcbde;
        height: 3.5rem;
        top: 0;
        width: 100%;
@@ -203,13 +205,14 @@ nav li {
 
 }
 footer {
-       background-color: #EAD2DF;
+       background-color: #edcbde;
        color: #000000;
        height: var(--header-height);
        padding: 0.5rem;
        bottom: 0;
        margin: 0;
        box-sizing: content-box;
+       border-radius: 0.3rem;
 }
 
 .Skills li {
@@ -369,7 +372,7 @@ footer {
        }
 
        header {
-              background-color: #e5c1cd;
+              background-color:  #e5c1cd;
               top:0;
               position: sticky;
               padding: 0; 
