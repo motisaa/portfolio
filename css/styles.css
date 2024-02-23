@@ -369,7 +369,9 @@ footer {
        .dark-theme nav a:visited{
               color: #eee;
        }
-
+       nav ul{
+              gap: 0.2rem;
+       }
 
        header {
               background-color: #e5c1cd;
@@ -381,6 +383,7 @@ footer {
 
        svg{
               width: 2rem;
+              float: right;
        }
        
 }
