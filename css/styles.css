@@ -115,7 +115,7 @@ body {
 
 body.dark-theme {
        --text-color: #eee;
-       --bkg-color: rgb(70, 72, 72)
+       --bkg-color: rgb(70, 72, 72);
 }
 body {
        margin-top: 0;
