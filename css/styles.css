@@ -137,8 +137,8 @@ body {
        }
 }
 html {
-       max-width: 75ch;
-       margin: auto;
+       
+       
        font-size: 20px;
        font-family: 'Roboto', sans-serif;
        /*Codigo del profe DM */
@@ -148,7 +148,10 @@ html {
        /* Ensure padding when scrolling: */
        scroll-padding-top: var(--header-height-extra);
 }
-
+main {
+       max-width: 75ch;
+       margin: auto;
+}
 .name {
        font-family: 'Protest Riot', serif;
 }
